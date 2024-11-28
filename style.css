@@ -289,7 +289,7 @@ input.quantity {
 
 .babo {
   background-image: url('h.webp');
-  background-size:90% 100%;
+  background-size:85% 100%;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
@@ -470,6 +470,11 @@ input.quantity {
 @media (max-width: 576px) {
   .navbar .logo {
     font-size: 1.5rem;
+  }
+  .babo {
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center;
+    padding: 100px 10px; /* Adjust padding for smaller screens */
   }
 
   .hero {
