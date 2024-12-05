@@ -1,76 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merciado Park</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="logo">Merciado Park</div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="ticket.html">Tickets</a></li>
-            <li><a href="Resturent.html">Resturent</a></li>
-            <li><a href="Gallery.html">Gallerey</a></li>
-            <li><a href="About.html">About Us</a></li>
-        </ul>
-    </nav>
-    <section class="section">
-        <h2>Ticket Prices</h2>
-        <div class="price-selector">
-            <select id="day-type">
-                <option value="weekday">Weekday</option>
-                <option value="weekend">Weekend</option>
-            </select>
-        </div>
-        <table id="ticket-table">
-            <thead>
-                <tr>
-                    <th>Ticket Type</th>
-                    <th>Weekday Price</th>
-                    <th>Weekend Price</th>
-                    <th>Quantity</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Single Entry</td>
-                    <td data-price="20">$20</td>
-                    <td data-price="25">$25</td>
-                    <td>
-                        <input type="number" class="quantity" data-type="single" min="0" value="0">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Family Pack</td>
-                    <td data-price="60">$60</td>
-                    <td data-price="80">$80</td>
-                    <td>
-                        <input type="number" class="quantity" data-type="family" min="0" value="0">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="total">
-            <h3>Total: $<span id="total-price">0</span></h3>
-        </div>
-        <a  onclick="
-        alert ('Your Ticket is booked');
-        " href="ticket.html" class="cta-button">Book Tickets</a>
-    </section>
-    
-    
-    <footer id="contact" class="footer">
-        <p>&copy; 2024 Merciado Amusement Park | All rights reserved.</p>
-        <ul>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Merciado Park</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+      
+      </head>
+      <body>
+      
+      
+        <nav id="mb" class="navbar navbar-expand-lg navbar-dark " style="padding: 19px; background-color: #333;">
+          <div class="container-fluid">
+            
+            <a class="navbar-brand" href="#" style="font-size: 27px;font-weight: bolder;">Merciado Park</a>
+      
+          
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+           
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ticket.html">Tickets</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Resturent.html">Resturent</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.html">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+      <div class="ww">
+      <section class="section">
+          <h2>Ticket Prices</h2>
+          <div class="price-selector">
+              <select id="day-type">
+                  <option value="weekday">Weekday</option>
+                  <option value="weekend">Weekend</option>
+              </select>
+          </div>
+          <table id="ticket-table">
+              <thead>
+                  <tr>
+                      <th>Ticket Type</th>
+                      <th>Weekday Price</th>
+                      <th>Weekend Price</th>
+                      <th>Quantity</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Single Entry</td>
+                      <td data-price="20">$20</td>
+                      <td data-price="25">$25</td>
+                      <td>
+                          <input type="number" class="quantity" data-type="single" min="0" value="0">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Family Pack</td>
+                      <td data-price="60">$60</td>
+                      <td data-price="80">$80</td>
+                      <td>
+                          <input type="number" class="quantity" data-type="family" min="0" value="0">
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+          <div class="total">
+              <h3>Total: $<span id="total-price">0</span></h3>
+          </div>
+          <a  onclick="
+          alert ('Your Ticket is booked');
+          " href="ticket.html" class="cta-button">Book Tickets</a>
+      </section>
+  </div>
+      
+      
+      <footer id="contact" class="footer">
+          <p>&copy; 2024 Merciado Amusement Park | All rights reserved.</p>
+          <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+          </ul>
+      </footer>
+      <script src="script.js"></script>
+  </body>
+  </html>

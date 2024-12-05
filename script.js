@@ -3,7 +3,6 @@
     const totalPriceElement = document.getElementById("total-price");
     const dayTypeSelector = document.getElementById("day-type");
 
-    // Add event listeners to inputs and dropdown
     quantityInputs.forEach(input => {
         input.addEventListener("input", calculateTotal);
     });
@@ -18,8 +17,8 @@
             const quantity = parseInt(input.value) || 0;
             const row = input.closest("tr");
             const price = isWeekend
-                ? parseFloat(row.children[2].dataset.price) // Weekend Price
-                : parseFloat(row.children[1].dataset.price); // Weekday Price
+                ? parseFloat(row.children[2].dataset.price) 
+                : parseFloat(row.children[1].dataset.price); 
 
             total += quantity * price;
         });

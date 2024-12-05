@@ -1,116 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amusement Park Gallery</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        
-        
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Amusement Park Gallery</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-        
-    
-    </style>
-</head>
-<body class="btech">
+  <!-- Add this before the closing </body> tag -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <header>
-      <nav class="navbar">
-        <div class="logo">Merciado Park</div>
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark " style="padding: 10px; background-color: #333;">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#" style="font-size: 27px;font-weight: bolder;">Merciado Park</a>
+      
+
+        <!-- Hamburger Button for Mobile -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ticket.html">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Resturent.html">Resturent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+          
+      </header>
+
+      <div class="section-title">
+          <h2 class="pagal">Explore Our Exciting Rides!</h2>
+      </div>
+
+      <div class="gallery-container">
+          <!-- Ride Photos -->
+          <div class="gallery-item">
+              <img src="wow.webp" alt="Roller Coaster">
+              <div class="caption">Thrilling Roller Coaster Ride</div>
+          </div>
+          <div class="gallery-item">
+              <img src="6.jpeg" alt="Water Slide">
+              <div class="caption">Exciting Water Slide</div>
+          </div>
+          <div class="gallery-item">
+              <img src="fahad wheel.jpg" alt="Ferris Wheel">
+              <div class="caption">Ferris Wheel Views</div>
+          </div>
+
+          <!-- Park Overview -->
+          <div class="gallery-item">
+              <img src="babi.jpg" alt="Park Overview">
+              <div class="caption">Aerial View of the Park</div>
+          </div>
+          <div class="gallery-item">
+              <img src="a.jpeg" alt="Park Entrance">
+              <div class="caption">Grand Entrance to the Park</div>
+          </div>
+
+          <!-- Special Events -->
+          <div class="gallery-item">
+              <img src="z.jpeg" alt="Holiday Parade">
+              <div class="caption">Holiday Parade</div>
+          </div>
+          <div class="gallery-item">
+              <img src="b.jpeg" alt="Fireworks Show">
+              <div class="caption">Magical Fireworks Display</div>
+          </div>
+      </div>
+
+      <div class="section-title">
+          <h2>Food and Dining Delights!</h2>
+      </div>
+
+      <div class="gallery-container">
+          <div class="gallery-item">
+              <img src="c.jpeg" alt="Cotton Candy">
+              <div class="caption">Giant Cotton Candy</div>
+          </div>
+          <div class="gallery-item">
+              <img src="f.jpeg" alt="Themed Meal">
+              <div class="caption">Themed Dining Experience</div>
+          </div>
+          <div class="gallery-item">
+              <img src="j.jpeg" alt="Churros">
+              <div class="caption">Delicious Churros</div>
+          </div>
+      </div>
+
+      <div class="section-title">
+          <h2 class="pagal ">Fun Interactive Experiences!</h2>
+      </div>
+
+      <div class="gallery-container">
+          <div class="gallery-item">
+              <img src="o.jpeg" alt="Carnival Game">
+              <div class="caption">Carnival Games</div>
+          </div>
+          <div class="gallery-item">
+              <img src="p.jpeg" alt="Prize Winning">
+              <div class="caption">Winning Big at the Games</div>
+          </div>
+      </div>
+      <footer id="contact" class="footer">
+        <p>&copy; 2024 Merciado Amusement Park | All rights reserved.</p>
         <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="ticket.html">Tickets</a></li>
-            <li><a href="Resturent.html">Resturent</a></li>
-            <li><a href="Gallery.html">Gallerey</a></li>
-            <li><a href="About.html">About Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
         </ul>
-      </nav>
-        
-    </header>
+      </footer>
 
-    <div class="section-title">
-        <h2 class="pagal">Explore Our Exciting Rides!</h2>
-    </div>
-
-    <div class="gallery-container">
-        <!-- Ride Photos -->
-        <div class="gallery-item">
-            <img src="wow.webp" alt="Roller Coaster">
-            <div class="caption">Thrilling Roller Coaster Ride</div>
-        </div>
-        <div class="gallery-item">
-            <img src="6.jpeg" alt="Water Slide">
-            <div class="caption">Exciting Water Slide</div>
-        </div>
-        <div class="gallery-item">
-            <img src="fahad wheel.jpg" alt="Ferris Wheel">
-            <div class="caption">Ferris Wheel Views</div>
-        </div>
-
-        <!-- Park Overview -->
-        <div class="gallery-item">
-            <img src="babi.jpg" alt="Park Overview">
-            <div class="caption">Aerial View of the Park</div>
-        </div>
-        <div class="gallery-item">
-            <img src="a.jpeg" alt="Park Entrance">
-            <div class="caption">Grand Entrance to the Park</div>
-        </div>
-
-        <!-- Special Events -->
-        <div class="gallery-item">
-            <img src="z.jpeg" alt="Holiday Parade">
-            <div class="caption">Holiday Parade</div>
-        </div>
-        <div class="gallery-item">
-            <img src="b.jpeg" alt="Fireworks Show">
-            <div class="caption">Magical Fireworks Display</div>
-        </div>
-    </div>
-
-    <div class="section-title">
-        <h2>Food and Dining Delights!</h2>
-    </div>
-
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="c.jpeg" alt="Cotton Candy">
-            <div class="caption">Giant Cotton Candy</div>
-        </div>
-        <div class="gallery-item">
-            <img src="f.jpeg" alt="Themed Meal">
-            <div class="caption">Themed Dining Experience</div>
-        </div>
-        <div class="gallery-item">
-            <img src="j.jpeg" alt="Churros">
-            <div class="caption">Delicious Churros</div>
-        </div>
-    </div>
-
-    <div class="section-title">
-        <h2 class="pagal ">Fun Interactive Experiences!</h2>
-    </div>
-
-    <div class="gallery-container">
-        <div class="gallery-item">
-            <img src="o.jpeg" alt="Carnival Game">
-            <div class="caption">Carnival Games</div>
-        </div>
-        <div class="gallery-item">
-            <img src="p.jpeg" alt="Prize Winning">
-            <div class="caption">Winning Big at the Games</div>
-        </div>
-    </div>
-    <footer id="contact" class="footer">
-      <p>&copy; 2024 Merciado Amusement Park | All rights reserved.</p>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
-    </footer>
-
-</body>
-</html>
+  </body>
+  </html>
