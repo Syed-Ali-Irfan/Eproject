@@ -15,42 +15,41 @@
       <body>
       
       
-        <nav id="mb" class="navbar navbar-expand-lg navbar-dark " style="padding: 20px; background-color: #333;">
+        <nav class="navbar navbar-expand-lg navbar-dark " style="padding: 20px; background-color: #333;"  >
           <div class="container-fluid">
-            
+           
             <a class="navbar-brand" href="#" style="font-size: 27px;font-weight: bolder;">Merciado Park</a>
-      
           
+    
+            
             <button
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
+              aria-expanded="false">
               <span class="navbar-toggler-icon"></span>
             </button>
-      
-           
+    
+            
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li >
                   <a class="nav-link" href="home.html">Home</a>
                 </li>
-                <li class="nav-item">
+                <li>
                   <a class="nav-link" href="ticket.html">Tickets</a>
                 </li>
-                <li class="nav-item">
+                <li >
                   <a class="nav-link" href="Resturent.html">Resturent</a>
                 </li>
-                <li class="nav-item">
+                <li >
                   <a class="nav-link" href="Gallery.html">Gallery</a>
                 </li>
-                <li class="nav-item">
+                <li >
                   <a class="nav-link" href="About.html">About Us</a>
                 </li>
-                <li class="nav-item">
+                <li >
                   <a class="nav-link" href="Contact.html">Contact Us</a>
                 </li>
               </ul>
@@ -79,16 +78,16 @@
               <tbody>
                   <tr>
                       <td>Single Entry</td>
-                      <td data-price="20">$20</td>
-                      <td data-price="25">$25</td>
+                      <td data-price="1000">1000Rs</td>
+                      <td data-price="2000">2000Rs</td>
                       <td>
                           <input type="number" class="quantity" data-type="single" min="0" value="0">
                       </td>
                   </tr>
                   <tr>
                       <td>Family Pack</td>
-                      <td data-price="60">$60</td>
-                      <td data-price="80">$80</td>
+                      <td data-price="3000">3000Rs</td>
+                      <td data-price="4000">4000Rs</td>
                       <td>
                           <input type="number" class="quantity" data-type="family" min="0" value="0">
                       </td>
@@ -96,7 +95,7 @@
               </tbody>
           </table>
           <div class="total">
-              <h3>Total: $<span id="total-price">0</span></h3>
+              <h3>Total Rs:<span id="total-price">0</span></h3>
           </div>
           <a  onclick="
           alert ('Your Ticket is booked');

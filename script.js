@@ -1,3 +1,4 @@
+  
   document.addEventListener("DOMContentLoaded", () => {
     const quantityInputs = document.querySelectorAll(".quantity");
     const totalPriceElement = document.getElementById("total-price");
@@ -23,6 +24,6 @@
             total += quantity * price;
         });
 
-        totalPriceElement.textContent = total.toFixed(2);
+        totalPriceElement.textContent = total;
     }
 });

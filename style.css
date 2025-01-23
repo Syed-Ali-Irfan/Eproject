@@ -22,15 +22,42 @@
         padding: 150px 20px;
       }
 
-      .hero h1 {
-        font-size: 3rem;
-        margin-bottom: 20px;
-      }
+@keyframes babi {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-      .hero p {
-        font-size: 1.5rem;
-        margin-bottom: 30px;
-      }
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  opacity: 0; 
+  animation: babi 1.5s ease-out forwards;
+  animation-delay: 0.5s; 
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  opacity: 0; 
+  animation: babi 1.5s ease-out forwards; 
+  animation-delay: 1s;
+}
+
+.hero {
+  background-image: url('babi.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 150px 20px;
+}
+
 
       .cta-button {
         margin-bottom: 20px;
@@ -179,6 +206,7 @@
         margin: 0 auto 20px;
         border-collapse: collapse;
         text-align: center;
+        font-weight: bold;
       }
 
       table th, table td {
@@ -206,6 +234,7 @@
         text-align: center;
         margin: 20px 0;
         font-size: 1.2em;
+        font-weight: bold;
       }
 
       .cta-button {
@@ -267,6 +296,21 @@
         color: white;
         text-align: center;
         padding: 150px 20px;
+      }
+      .babo h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        opacity: 0; 
+        animation: babi 1.5s ease-out forwards;
+        animation-delay: 0.5s; 
+      }
+      
+      .babo p {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        opacity: 0; 
+        animation: babi 1.5s ease-out forwards; 
+        animation-delay: 1s;
       }
 
       .btech {
